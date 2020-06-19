@@ -34,16 +34,16 @@ function addListOnKeyPress(event) {
   if (inputLength() > 0 && event.which === 13) createListElement();
 }
 
-function toggleDone() {
-  this.classList.toggle("done");
+function toggleDone(event) {
+  event.target.classList.toggle("done");
 }
 
 function addToggleDone(item) {
   item.addEventListener("click", toggleDone);
 }
 
-function deleteItem() {
-  this.parentElement.remove();
+function deleteItem(event) {
+  event.target.parentElement.remove();
 }
 
 function addDeleteItem(deleteBtn) {
