@@ -19,16 +19,14 @@ const checkString = (array) => {
 checkString(bonusArray);
 
 let sortToArray = (array) => {
-  debugger;
+  let oldArray = sorting(array);
   let newArray = [];
   let tempArray = [];
-  for (let i = 0; i < array.length; i++) {
-    tempArray = array.filter((num) => array[i] === num);
-    if (tempArray.length === 1)
-      tempArray = tempArray.reduce((acc, val) => (acc += val));
+  while (oldArray.length > 0) {
+    tempArray = oldArray.filter((num) => oldArray[0] === num);
+    if (tempArray.length === 1) tempArray = tempArray[0];
     newArray.push(tempArray);
-    array = array.filter((num) => num !== array[i]);
-    i -= 1;
+    oldArray = oldArray.filter((num) => num !== oldArray[0]);
   }
   return newArray;
 };

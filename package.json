@@ -1,0 +1,20 @@
+{
+  "name": "web-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasd0109/Web-Dev-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wasd0109/Web-Dev-learning/issues"
+  },
+  "homepage": "https://github.com/wasd0109/Web-Dev-learning#readme"
+}
